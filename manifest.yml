@@ -1,0 +1,11 @@
+applications:
+- name: hello-world
+  path: target/hello-world-0.0.1-SNAPSHOT.jar
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  services:
+  - hello-world-mongodb
+  routes:
+  - route: blablarandomtheht.cfapps.io
+  stack: cflinuxfs2
